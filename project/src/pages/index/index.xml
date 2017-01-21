@@ -13,12 +13,12 @@
 				<text class="content">{{item.content}}</text>
 			</view>
 			<view class='confirm-bar'>
-				<view id="{{item.id}}" catchtap='delet' class="delet">
+				<button type="warn" id="{{item.id}}" catchtap='delet' class="delet">
 					删除
-				</view>
-				<view id="{{item.id}}" catchtap='finish' class="confirm">
+				</button>
+				<button type="primary" id="{{item.id}}" catchtap='finish' class="confirm">
 					确认
-				</view>
+				</button>
 			</view>
 		</view>
 	</scroll-view>
