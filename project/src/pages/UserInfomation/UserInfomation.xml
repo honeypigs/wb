@@ -1,7 +1,12 @@
-<view class="container">
-  <text class="title">{{ title }}</text>
-  <view class="info">
-    <image src="{{userInfo.avatarUrl}}"/>
-    <text>{{ userInfo.nickName }}</text>
-  </view>
+<view class="userInfo">
+		<image src="{{userInfo.avatarUrl}}"/>
+    	<text class="userName">{{ userInfo.nickName }}</text>
+    	<text wx:if="{{ userInfo.gender == 1 }}" class="gender">男</text>
+    	<text wx:if="{{userInfo.gender == 0}}" class="gender">女</text>
+    	<view class="changeInfo"><text class="list">个人信息</text></view>
+    	<view class="changeUser"><text class="list">账户信息</text></view>
+    	<view class="aboutUs"><text class="list">关于我们</text></view>
+    	<button type="warn" catchtap='exit' class="exit">
+			退出登录
+		</button>
 </view>
